@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 
 module.exports = function(env) {
 	if (env === 'development') {
-		mongoose.connect('mongodb://localhost/multivision');
+		mongoose.connect('mongodb://localhost/mean');
 	} else {
-		mongoose.connect('mongodb://makatz:matn821309@ds033103.mongolab.com:33103/multivision');
+		// mongoose.connect(/* Connection String for Remote Data Storage */);
 	}
 
 	var db = mongoose.connection;
